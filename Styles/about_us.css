@@ -1,0 +1,67 @@
+main {
+    background-color: #333;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+}
+#header {
+    border: 1px solid blue;
+}
+main .container {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main .container h2 {
+    text-align: left;
+    display: grid;
+}
+
+
+.about-us {
+    height: 200px;
+    background-image: url('/imags/coffeshop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#text-body {
+    margin: 15px 0;
+}
+.card {
+    height: auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+.card p {
+    color: #333;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+}
+#text-body .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+   #text-body .description {
+        flex-direction: column;
+    }
+    .card p {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        vertical-align: center;
+    }
+}

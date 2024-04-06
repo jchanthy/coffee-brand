@@ -1,7 +1,4 @@
-:root {
-    --bg-color: #222;
-    --fg-color: #333;
-}
+
 
 main {
     display: grid;
