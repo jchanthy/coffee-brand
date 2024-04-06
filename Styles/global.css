@@ -49,6 +49,10 @@ header {
   text-align: center;
 }
 
+.logo img {
+    width: 96px;
+}
+
 .title-text {
   text-align: center;
   font-size: 2.5rem;
@@ -98,12 +102,9 @@ nav ul li a::after {
   transform-origin: bottom right;
 }
 
-nav ul li a.active {
-  background-color: #222;
-}
-
 nav ul li a:hover::after,
-nav ul li a:focus::after {
+nav ul li a:focus::after,
+nav ul li a.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -131,12 +132,8 @@ footer {
 .footer-box a {
   color: white;
   text-decoration: none;
+  margin: 0 15px;
 }
-
-.footer-box a:hover {
-  text-decoration: underline;
-}
-
 
 .btn {
   display: inline-block;
