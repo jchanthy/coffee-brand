@@ -53,9 +53,29 @@ font-family: 'Open San', sans-serif;
     padding: 20px;
 }
 
+.hamburger-menu {
+ display: flex; 
+ flex-direction: column;
+ background-color: #333;
+}
+.hamburger-menu ul {
+    background-color: #222;
+}
+
+.hamburger-menu ul li a{
+    color: white;
+text-decoration: none;
+padding: 20px;
+}
+
+.hamburger-menu ul li:hover {
+    background-color: var(--bg-color);
+}
+
 .banner{
     grid-area: banner;
     display: grid;
+    height: 400px;
     grid-template-columns: 1fr 1fr; /* Two columns */
     padding: 5px;
     gap: 5px;
@@ -65,19 +85,30 @@ font-family: 'Open San', sans-serif;
 .slide {
     background-color: var(--fg-color);
 }
+.slide img {
+    width: 100%;
+background-size: cover;
+}
+
+.source {
+    background-color: var(--fg-color);
+}
+.source img {
+    width: 100%;
+}
 
 .main{
     grid-area: quote;
     background-color: var(--fg-color);
-    height: 20vh;
+    height: 50vh;
     align-items: center;
     align-content: center;
 }
 .quote {
-    background-color: var(--bg-color);
+    background-color: var(--fg-color);
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 40px;
     align-items: center;
     padding: 10px;
     flex-direction: column;
@@ -116,5 +147,8 @@ background-color: var(--fg-color );
         display: flex;
         flex-direction: column;
     }
+    .hamburger-menu {
+    display: none;
+  }
 
 }
