@@ -34,6 +34,9 @@ main {
 #banner-hightlight .coffee:hover {
     cursor: pointer;
     transform: scale(1.03);
+     transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--animation-delay, 0s);
 }
 
 #banner-hightlight .source {
@@ -49,6 +52,9 @@ main {
 #banner-hightlight .source:hover {
     cursor: pointer;
     transform: scale(1.03);
+    transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+  animation-delay: var(--animation-delay, 0s);
 }
 
 #quote-hightlight .quote {
