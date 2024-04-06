@@ -7,3 +7,57 @@
 .logo img {
     width: 96px;
 }
+
+
+main {
+    display: grid;
+    background-color: #333;
+}
+
+#banner-hightlight {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 600px;
+}
+
+#banner-hightlight .coffee {
+    width: 50%;
+    background-image: url('/imags/coffeshop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#banner-hightlight .coffee:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#banner-hightlight .source {
+    width: 50%;
+    height: auto;
+    background-image: url('/imags/source.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#banner-hightlight .source:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#quote-hightlight .quote {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    padding: 20px;
+    font-size: 1.7rem;
+    background-color: #222;
+}
