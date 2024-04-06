@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #222;
+    --fg-color: #333;
+}
+* {margin: 0;padding: 0;
+font-family: 'Open San', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "banner"
+        "quote"
+        "footer";
+    grid-template-rows: auto 1fr auto 1fr; /* Define rows */
+    height: 100vh;
+}
+.header {
+    grid-area: header;
+    background-color:var(--bg-color); 
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--fg-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    width: 96px;
+    display: flex;
+    height: 96px;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li {
+    padding: 20px;
+    list-style: none;
+}
+.navbar ul li:hover {
+    background-color: var(--bg-color);
+}
+.navbar li.active {
+    background-color: var(--bg-color);
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.banner{
+    grid-area: banner;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    padding: 5px;
+    gap: 5px;
+    background-color: var(--bg-color);
+}
+
+.slide {
+    background-color: var(--fg-color);
+}
+
+.main{
+    grid-area: quote;
+    background-color: var(--fg-color);
+    height: 20vh;
+    align-items: center;
+    align-content: center;
+}
+.quote {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    padding: 5px;
+    background-color: var(--bg-color);
+    gap: 5px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+height: 10vh;
+padding: 5px;
+width: 50%;
+background-color: var(--fg-color );
+}
+
+@media  (max-width: 598px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
