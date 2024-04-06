@@ -9,14 +9,14 @@
     <title>Cafe</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html">
-              <img src="/Assets/Logo/WakeCup_500x500.png" alt="make cup logo" />
-            </a>
-          </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Assets/Logo/WakeCup_500x500.png" alt="make cup logo" />
+          </a>
+        </div>
+        <nav>
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
@@ -25,20 +25,19 @@
             <li><a href="learn_with_us.html">Learn with us</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
-      </header>
-
-      <div class="banner">
-        <div class="slide">
-          <img
-            src="https://i.pinimg.com/originals/d9/13/37/d91337e61ee40bd86901105927b52423.jpg" />
-        </div>
-        <div class="source">
-          <img
-            src="https://i.pinimg.com/originals/65/da/52/65da52b24d4ff80c736e56a11c342ed3.jpg" />
-        </div>
+        </nav>
       </div>
-      <div class="main">
+    </header>
+
+    <main>
+      <section id="banner-hightlight">
+        <div class="banner">
+          <img src="/imags/coffeshop2.jpg" />
+          <img src="/imags/source.jpg" />
+        </div>
+      </section>
+
+      <section id="quote-hightlight">
         <div class="quote">
           <p>
             “WakeCup isn’t just a call to rise and win, it is our mission to tap
@@ -49,14 +48,15 @@
             zing in your step and the life in your day!
           </p>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer-highlight">
+      <div class="slide">Footer Slide 1</div>
+      <div class="footer-box">
+        <div class="box">2</div>
+        <div class="box">3</div>
       </div>
-      <footer class="footer">
-        <div class="slide">Footer Slide 1</div>
-        <div class="footer-box">
-          <div class="box">2</div>
-          <div class="box">3</div>
-        </div>
-      </footer>
-    </div>
+    </footer>
   </body>
 </html>
