@@ -7,6 +7,10 @@ main {
 }
 
 main .container {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -23,14 +27,6 @@ main .container {
     height: 200px;
     border-radius: 10px;
 }
-
-
-.about-us {
-    border-radius: 10px;
-    background-image: url('/imags/coffeshop.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 section {
     display: grid;
 }
@@ -45,7 +41,6 @@ footer .container {
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 @media (max-width: 600px) {
     .container {

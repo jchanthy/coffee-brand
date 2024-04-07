@@ -29,13 +29,6 @@ body {
   width: 80%;
   margin: auto;
   max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  align-content: stretch;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 
 header {
@@ -44,6 +37,15 @@ header {
   padding: 0;
   border-bottom: 4px solid #333;
   z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -120,7 +122,6 @@ footer {
   grid-area: footer;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
