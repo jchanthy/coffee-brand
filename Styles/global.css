@@ -23,6 +23,7 @@ body {
   "main"
   "footer";
   /* grid-template-rows: auto 1fr auto 1fr;  */
+  overflow-x: hidden;
 }
 
 .container {
@@ -92,6 +93,7 @@ nav ul li a {
   position: relative;
   padding: 10px 0;
   border-radius: 0;
+  margin: 20px;
 }
 
 nav ul li a::after {
