@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/brewing_equipment.css" />
-    <link rel="stylesheet" href="/styles/animations.css"></link>
     <title>Cafe</title>
   </head>
   <body>
@@ -18,9 +17,11 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
-            <li><a href="coffee_blends.html">Coffee Blends</a></li>
+            <li>
+              <a class="" href="coffee_blends.html">Coffee Blends</a>
+            </li>
             <li>
               <a class="active" href="brewing_equipment.html"
                 >Brewing Equipment</a
@@ -32,29 +33,100 @@
         </nav>
       </div>
     </header>
-
     <main>
       <div class="container">
-        <h2>Coffee Blends</h2>
+        <h2>Brewing Equipment</h2>
         <section id="banner">
-          <div class="about-us">
-            <a class="image-heading" href="#"></a>
-          </div>
-        </section>
-        <section id="unique">
-          <div class="card">
-            <p class="description">
-              Get ready to be fascinated by outstanding blends from around the
-              world
+          <a class="coffee_blends" href="#">
+            <p>
+              You don’t have to be a professional barista to brew great coffee
+              but who doesn’t want to be one? That is why, we offer a range of
+              professional grade coffee brewing equipment for your home so that
+              you can begin your day, just like we do at our cafes. These
+              products are manufactured with the utmost quality in an
+              ecologically responsible facility.
             </p>
-          </div>
+          </a>
         </section>
-        <section id="classic">
-          <div class="card">
-            <p class="description">
-              Somethings never change, just like our classics. You won’t get
-              these elsewhere. They’re special and close to our heart.
-            </p>
+
+        <section id="courses">
+          <h2 class="title">Professional Brewing Equipment @ Home</h2>
+        </section>
+
+        <section>
+          <div class="grid-container">
+            <div class="card">
+              <img
+                class="product-img"
+                src="/Assets/BrewingEquipment/WakeCupMochaPot.jpg"
+                alt="" />
+
+              <h1 class="title">WakeCup Mocha Pot</h1>
+              <p>
+                Our stove top mocha pot lets you brew pro grade Espresso
+                quickly.
+              </p>
+
+              <div class="footer">
+                <button class="btn-buy">Buy</button>
+                <h1>8.00$</h1>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="product-img"
+                src="/Assets/BrewingEquipment/WakeCupCafePress.jpg"
+                alt="" />
+
+              <h1 class="title">WakeCup Café Press</h1>
+              <p>
+                If you love French press style coffee but are afraid it might
+                break, then try our rock-solid Café Press. It’s tough and brews
+                an awesome cuppa!
+              </p>
+
+              <div class="footer">
+                <button class="btn-buy">Buy</button>
+                <h1>11.00$</h1>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="product-img"
+                src="/Assets/BrewingEquipment/WakeCupColdBrewCoffeePot.jpg"
+                alt="" />
+
+              <h1 class="title">WakeCup Cold Brew Coffee Pot</h1>
+              <p>
+                If you’re a fan of cold brews like we are, then you must get our
+                exclusive cold brew coffee pot.
+              </p>
+
+              <div class="footer">
+                <button class="btn-buy">Buy</button>
+                <h1>15.00$</h1>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="product-img"
+                src="/Assets/BrewingEquipment/WakeCupCoffeeGrinder.jpg"
+                alt="" />
+
+              <h1 class="title">WakeCup Coffee Grinder</h1>
+              <p>
+                If you’re a fan of cold brews like we are, then you must get our
+                exclusive cold brew coffee pot.
+              </p>
+
+              <div class="footer">
+                <button class="btn-buy">Buy</button>
+                <h1>15.00$</h1>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -63,16 +135,14 @@
     <footer>
       <div class="container">
         <p>&copy; 2024 John Chanthy's CapSton Project. All Rights Reserved.</p>
-       
-            <nav>
-              <ul>
-                <li>
-                  <a href="/our_coffees.html"> Our Coffee </a>
-                  <a href="/the_source.html"> The Source </a>
-                </li>
-              </ul>
-            </nav>
-         
+        <nav>
+          <ul>
+            <li>
+              <a href="/our_coffees.html"> Our Coffee </a>
+              <a href="/the_source.html"> The Source </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
