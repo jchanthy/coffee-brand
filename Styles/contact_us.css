@@ -19,15 +19,22 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/imags/contact_us_ing.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner h2{
+    font-size: 3rem;
+    color: #333;
+    font-weight: 400;
 }
 .contact-form {
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: #222;
 }
 .grid-container {
     display: flex;
@@ -37,11 +44,10 @@ main {
     margin: 40px;
 }
 
-.contact-form {
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+select#city {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
 }
 
 .checkbox {

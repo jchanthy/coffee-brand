@@ -90,9 +90,6 @@ button {
 
 p.price {font-size: 2rem;}
 
-footer {
-    display: grid;
-}
 
 footer .container {
     display: flex;
