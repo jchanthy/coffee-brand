@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/contact_us.css" />
     <title>Cafe</title>
   </head>
   <body>
@@ -26,7 +27,40 @@
         </nav>
       </div>
     </header>
-
+    <main>
+      <div class="container">
+        <section id="banner">
+          <h2>Contact Us</h2>
+        </section>
+        <section>
+          <div class="grid-container">
+            <div class="contact-form">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="phone">Phone</label>
+              <input type="phone" id="phone" name="phone" />
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" />
+              <div class="checkme">
+                <label for="checkme">
+                  Are you interested in partnering with us?</label
+                >
+                <input
+                  class="input-small"
+                  type="checkbox"
+                  id="checkme"
+                  name="checkme" />
+              </div>
+              <div class="btn-submit">
+                <button>Submit</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer>
       <div class="container">
         <p>&copy; 2024 John Chanthy's CapSton Project. All Rights Reserved.</p>

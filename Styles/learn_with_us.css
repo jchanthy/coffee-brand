@@ -25,6 +25,7 @@ main .container {
     background-image: url('/Assets/LearnWithUs/LearnWithUsHeader.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 section {
     display: grid;
