@@ -1,0 +1,122 @@
+main {
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+main .container {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container h2 {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    background-image: url('/Assets/LearnWithUs/LearnWithUsHeader.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {
+    display: grid;
+}
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;}
+
+#courses h2 {
+    border: 1px solid;
+    margin: 20px 0;
+    padding: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: pink;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.card h1 {
+margin: 0;
+}
+
+.card-bg-blueviolet {
+    background-color: blueviolet;
+    color: white;
+}
+
+.duration-course {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+}
+
+button {
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.card p {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+p.price {font-size: 2rem;}
+
+footer {
+    display: grid;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .grid-container {
+        
+        padding: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer nav {
+        padding: 0;
+    }
+ 
+}
