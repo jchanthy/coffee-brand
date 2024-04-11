@@ -16,32 +16,31 @@ main .container {
 }
 
 #banner{
-    display: grid;
     width: 100%;
     height: 200px;
-    border-radius: 10px;
-}
-
-
-.about-us {
     border-radius: 10px;
     background-image: url('/imags/coffeshop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
-#banner .about-us {
-    display: flex;
-    color: #fff;
-    font-size: 2.7rem;
-    text-decoration: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
+    
     transform: scale(1.03);
     transform: translateY(20px);
     animation: fadeInUp 0.8s forwards;
     animation-delay: var(--animation-delay, 0s);
+}
+
+#banner p{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.3rem;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+ 
 }
 
 #banner .about-us::after {
